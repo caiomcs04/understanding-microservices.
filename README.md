@@ -1,88 +1,123 @@
-# Projeto Live DIO :three: :rocket:
+# Nome do Projeto
 
-> Seguindo a trilha das live codes disponibilizados pela digital innovation one, vou iniciar o terceiro projeto que consiste em criar uma aplicação baseada em microserviços utilizando o spring cloud.
+Breve descrição (preferencialmente em um paragrafo) do projeto abordando o porque da sua criação, objetivo ou ideia de utilização.
+
+> Exemplo:
 >
-> Objetivo aqui é aprender cada vez mais sempre! :smiley:
+> Este projeto visa ajudar diretamente os desenvolvedores, principalmente aqueles que não se sentem confortável com o inglês, na elaboração da descrição de seus projetos, fornecendo neste template uma base com tópicos, exemplos de como e o que colocar no README.md.
+
+## Pré-requisitos
+
+Informe aqui tudo que é obrigatório previamente já ter sido configurado/instalado no ambiente que será executado sua aplicação; exemplifique também como fazê-lo;
+
+> Exemplo (Para criar uma aplicação com React):
+> - **Node** com versão superior ou igual que 8.1 - [Node Donwload](https://nodejs.org/pt-br/download/)
+> - **NPM** com versão superior ou igual que 5.6 - [Npm Donwload](https://www.npmjs.com/package/download)
+
+## Instalação
+
+A pergunta a ser respondida aqui é: "Quais comandos precisará outra pessoa fazer para conseguir configurar o seu projeto?"
+
+Recomendo configurar o seu projeto em uma outra pasta/ambiente e anotar aqui todos os passos necessários para a execução.
+
+> Exemplo:
 >
-> Não posso deixar de agradecer a toda a equipe que proporcionou essa oportunidade. Fica aqui minha gratidão!
+> Clone esse projeto em seu computador com o comando:
+> ```
+> 	git clone [Url do seu repositório]
+> ```
+> Acesse a pasta do projeto seu terminal:
+> ```
+> 	cd [Nome da pasta do seu Projeto]
+> ```
+> Já pasta da aplicação em seu terminal, digite o seguinte comando:
+> ```
+> 	yarn install
+> ```
+
+## Execução
+
+Esse é talvez o tópico mais importante, faça com atenção.
+
+Através das informações especificadas nele, outras pessoas poderam visualizar e testar o funcionamento da sua aplicação.
+
+> Exemplo: 
 >
-> **Observação importante!**
+> Após ter configurado o projeto e ter aguardado a instalação das dependencias de desenvolvimento, execute o comando:
+> ```
+> 	yarn start
+> ```
+> A aplicação estará disponível para visualização em seu navegador, caso isso não aconteça automaticamente abre o navegador no seguinte endereço: _localhost:3000_
+
+## Funcionalidades
+
+Imagine aqui que outra pessoa configurou e executou o seu projeto, apresente então as principais funcionalidade que seu projeto tem e onde encontrar, dessa forma ela vai conseguir testar e usar tudo o que foi desenvolvido.
+
+Você ao fazer isso evita que o usuário da aplicação, por não ter conhecimento, pule ou não veja o que seu projeto é capaz de fazer.
+
+> Exemplo: 
 >
-> Esse projeto está utilizando dependências de versões passadas, caso você esteja tendo dificuldades no andamento deste projeto vou passar aqui a solução que me ajudou a continuar:
+> Este projeto visa a funcionalidade de ser: 
+> - Template de README.md em PORTUGUÊS - PTBR;
+> - Artigo explicando e exemplificando tópicos de documentação;
 
 
+## Testes
 
-Faça 2 modificações no arquivo build.gradle como a ilustração abaixo:
+Sua aplicação contempla testes? Se sim, explique como executar os testes automatizados para este sistema; você também pode anexar aqui as capturas de telas (prints) dos testes que você fez ou de um determinado comportamento da aplicação.
 
-Na sessão de plugins substitua a versão de springframework.boot pela seguinte linha abaixo
+Tipos de testes: 
+- Unitários
+- Performance
+- Segurança
+- Regressão
 
-```shell script
-id 'org.springframework.boot' version '2.2.6.RELEASE'
-```
+Dentre outros...
+> Exemplo de comando para execução de testes em uma aplicação:
+> ```
+> 	yarn test
+> ```
 
-E na sessão de depencencies altere a versão da dependency spring-boot-starter-data-elasticsearch:
+## Links
 
-```shell script
-implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch:2.4.0'
-```
+Mesmo que as informações possam estar sendo apresentadas no seu código, pode ocorrer de algumas pessoas não terem total entendimento sobre o que foi proposto ou determinados termos técnicos, você pode incluir um resumo dos links mais úteis para leitura dessas termos, por exemplo.
 
-
-
-Crédito Total ao **Sr.Kokado** por essa solução!
-
-Segue link do artigo dele: https://digitalinnovation.one/artigos/nao-encontra-entitymapper-no-arquivo-elasticsearchconfigjava-do-modulo-product-catalog-de-microservico
-
-
-
-#### Trilha de aprendizado:
-
-<p style="background-color: rgba(255, 119, 0, 1); border-radius: 3px;">
-<strong>COMMIT INICIAL</strong><br><br>
-<strong>Parte 1:</strong><br>
-Introdução a microserviços, a divisão de um sistema em multiplas aplicações independente uma das outras.<br>
-<br><strong>Parte 2:</strong><br>
-Aprendi um pouco mais sobre o conceito de spring, um framework que controla as instâncias de um sistema.<br>
-<br></p>
+> Exemplo: 
+> - [Guia de Markdown](https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open)
+> - [Como formatar o Readme?](https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8#:~:text=md%20%C3%A9%20um%20arquivo%20markdown,tags%20tamb%C3%A9m%20funcionam%2C%20veremos%20adiante.&text=Basta%20copiar%20o%20que%20o,e%20colar%20no%20README.md.)
 
 
-<p style="background-color: rgba(187, 187, 19, 1); border-radius: 3px;">
-<strong>SEGUNDO COMMIT -> Configuração do projeto</strong><br><br>
-<strong>Parte 3:</strong><br>
-Aprendi sobre a função health do api Actuator que verifica o status do sistema. Instalamos a imagem virtual do elasticSearch no docker.<br>
-<br></p>
+## Contribuições
+
+Seu projeto pode receber contribuições da comunidade? Se sim, utilize esse tópico;
+aqui você coloca as informações resumidas de como a pessoa poderá o ajudar com o projeto.
+
+> Exemplo:
+> - Para contribuir com esse projeto, fork este projeto, faça as modificações que tens desejo e crie um pull request; veja as instruções detalhadas no arquivo _CONTRIBUTING.md_.
+
+## Autores
+
+Informe o nome das pessoas envolvidas no desenvolvimento do projeto e se quiser atribua as respectivas redes sociais para contato da comunidade;
+
+> Exemplo (Deste projeto):
+> - **Lucas Anderson Lima** - Idealizador e Escritor da Documentação - [Github](https://github.com/LuAnderson) | [Site](http://lucasanderson.com.br/)
 
 
-<p style="background-color: rgba(255, 154, 203, 1); border-radius: 3px;">
-<strong>TERCEIRO COMMIT -> Colocando entidade + repositório + funcionalidades</strong><br><br>
-<strong>Parte 4:</strong><br>
-Foi criado a classe Product, um repositório, um controller, um método POST e um método GET. Foi nesta parte que coloquei o swagger para realizar a validação dos métodos.<br>
-<br></p>
+## Licença 
 
+Existem vários tipos de licença open souce, para saber qual condiz mais com o seu projeto e até mesmo entender mais detalhadamente, recomendo verificar os tipos no seguinte site: [Escolha uma Licença](http://escolhaumalicenca.com.br/).
 
-<p style="background-color: rgb(240, 240, 240); border-radius: 3px;">
-<strong>QUARTO COMMIT -> Adicionando um serviço adicional</strong><br><br>
-<strong>Parte 5:</strong><br>
-Aprendi que microsserviços podem estar connectados a bancos de dados distintos dependendo do negócio. Foi implementado uma aplicalçao adicional ao projeto, o shopping-cart, com funcionalidades, entidades e banco de dados proprios<br>
-<br></p>
+> Exemplo: 
+> 
+> MIT License (MIT)
 
+## Agradecimentos 
 
-<p style="background-color: rgb(60, 179, 113); border-radius: 3px;">
-<strong>QUINTO COMMIT ->Adicionando o config-server ao projeto</strong><br><br>
-<strong>Parte 6:</strong><br>
-Testando as funcionalidade do Shopping-cart. Introdução ao conceito de Config server, um servidor que controla todas as configurações de cada microsserviço. Criado a aplicação config-server.<br>
-<br></p>
+Aqui, sinta-se a vontade a agradecer quem você desejar, tenha sido uma pessoa que a incentivou no projeto, inspirador, colaborador, amigos, etc.  
 
+> Exemplo: 
+> 
+> Comunidade Front <3
 
-<p style="background-color: #faebd7; border-radius: 3px;">
-<strong>SEXTO COMMIT ->Reconfigurando product-catalog e shopping-cart</strong><br><br>
-<strong>Parte 7:</strong><br>
-Testando o config-server, reconfigurando product-catalog e shopping-cart.<br>
-<br></p>
-
-
-<p style="background-color: #c0c0c0; border-radius: 3px;">
-<strong>SETIMO COMMIT ->Incorporando o service discovery</strong><br><br>
-<strong>Parte 8:</strong><br>
-Incorporando o service discovery, um intermediário dos requerimentos entre microsserviços. Configurando o service discovery.<br>
-<br></p>
-
+---
+Autor ❤ [Lucas Anderson Lima](http://lucasanderson.com.br/)
